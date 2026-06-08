@@ -1,0 +1,30 @@
+.section {
+  padding: 30px 0;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+/* --- Мобільна версія (1 колонка) --- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* --- Планшетна версія (від 768px - 2 колонки) --- */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Десктопна версія (від 1200px - 3 колонки) --- */
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

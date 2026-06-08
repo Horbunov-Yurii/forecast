@@ -1,0 +1,131 @@
+.detailsContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: var(--bg-dark);
+  font-size: 20px;
+}
+
+.closeBtn {
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.closeBtn:hover {
+  color: #e74c3c;
+}
+
+/* Додаткова інфо-сітка */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.infoCard {
+  background-color: var(--bg-light);
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.infoCard span {
+  font-size: 12px;
+  color: #777;
+}
+
+.infoCard strong {
+  font-size: 16px;
+  color: var(--text-dark);
+  margin-top: 4px;
+}
+
+/* Контейнер для графіку */
+.chartSection {
+  width: 100%;
+}
+
+.chartSection h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Контейнер для стовпчиків зі скролом на мобільних */
+.barChartContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  padding: 10px 0;
+  border-bottom: 2px solid #eee;
+  overflow-x: auto;
+  gap: 15px;
+}
+
+/* Стовпчик графіка */
+.chartColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 45px; /* Щоб стовпчики не стискалися занадто сильно на мобільних */
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.barTemp {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+/* Сам кольоровий стовпчик */
+.bar {
+  width: 100%;
+  background: linear-gradient(to top, var(--card-bg), var(--primary-color));
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5px;
+  transition: height 0.3s ease;
+  position: relative;
+}
+
+.barIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.barTime {
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}

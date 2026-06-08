@@ -1,0 +1,67 @@
+.footer {
+  background-color: var(--bg-dark);
+  color: #a0a0a0;
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 3px solid var(--primary-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.linksBlock h4 {
+  color: var(--text-light);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.list a:hover {
+  color: var(--primary-color);
+}
+
+/* --- Планшети та Десктопи (від 768px і вище) --- */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .list {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
